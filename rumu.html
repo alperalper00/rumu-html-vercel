@@ -3522,7 +3522,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             meltOverlay.style.height = '0%';
         }
         
-        // Event listeners
+        // Event listeners Rumeysa
         iceCube.addEventListener('mousedown', startMelting);
         iceCube.addEventListener('mouseup', stopMelting);
         iceCube.addEventListener('mouseleave', stopMelting);
@@ -3531,7 +3531,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         
         resetButton.addEventListener('click', resetIce);
         
-        // Prevent context menu on ice cube
+        // Prevent context menu on ice cube Rumeysa
         iceCube.addEventListener('contextmenu', (e) => {
             e.preventDefault();
         });
@@ -3692,7 +3692,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         updateCountdown();
         setInterval(updateCountdown, 60000);
 
-        // Number navigation
+        // Number navigation Rumeysa
         const numberButtons = document.querySelectorAll('.number-btn');
         const numberPages = [
             'home',   // Page 1
@@ -3716,21 +3716,21 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
                 const pageNumber = parseInt(this.getAttribute('data-number')) - 1;
                 const targetPage = numberPages[pageNumber];
                 
-                // Hide all pages
+                // Hide all pages Rumeysa
                 pages.forEach(page => {
                     page.classList.add('hidden');
                 });
                 
-                // Show target page
+                // Show target page Rumeysa
                 document.getElementById(targetPage).classList.remove('hidden');
                 
-                // Update button states
+                // Update button states Rumeysa
                 numberButtons.forEach(btn => {
                     btn.classList.remove('bg-pink-600', 'text-white');
                     btn.classList.add('bg-gray-300', 'text-gray-700');
                 });
                 
-                // Update nav buttons
+                // Update nav  buttons Rumeysa
                 navButtons.forEach(btn => {
                     btn.classList.remove('text-pink-600');
                     btn.classList.add('text-gray-500');
@@ -3746,7 +3746,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             });
         });
 
-        // Memory Carousel
+        // Memory Carousel Rumeysa
        
         // Özel Mesajlar
         // const messages = [
@@ -3766,7 +3766,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         // });
 
         // Love Notes
-        // Love Notes - Aynı not tekrar gösterilmez
+        // Love Notes - Aynı not tekrar gösterilmez Rumeysa
         const loveNotes = [
             "Gözlerinde kaybolmak en büyük mutluluğum",
             "Seninle her şey daha güzel",
@@ -3789,15 +3789,15 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
 
         let shownNotes = [];
         document.getElementById('new-note').addEventListener('click', function() {
-            // Eğer tüm notlar gösterildiyse, tekrar eklenmesin, sadece uyarı ver
+            // Eğer tüm notlar gösterildiyse, tekrar eklenmesin, sadece uyarı ver Rumeysa
             if (shownNotes.length === loveNotes.length) {
             alert("Aşkım Tüm Notları Görüntüledin.");
             return;
             }
 
-            // Gösterilmeyen notları bul
+            // Gösterilmeyen notları bul Rumeysa
             const availableNotes = loveNotes.filter(note => !shownNotes.includes(note));
-            // Rastgele bir not seç
+            // Rastgele bir not seç Rumeysa
             const randomNote = availableNotes[Math.floor(Math.random() * availableNotes.length)];
             shownNotes.push(randomNote);
 
@@ -3807,7 +3807,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             document.querySelector('#love-notes .space-y-4').prepend(noteElement);
         });
 
-        // Virtual Hug Button
+        // Virtual Hug Button Rumeysa
         document.getElementById('hug-button').addEventListener('click', function() {
             const hugEffect = document.getElementById('hug-effect');
             hugEffect.classList.remove('hidden');
@@ -3818,7 +3818,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             }, 1000);
         });
 
-        // Love Quiz
+        // Love Quiz Rumeysa
         document.getElementById('start-quiz').addEventListener('click', function() {
             document.getElementById('quiz-start').classList.add('hidden');
             document.getElementById('quiz-questions').classList.remove('hidden');
@@ -3864,7 +3864,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         //     document.querySelector('#future-letters .space-y-4')?.prepend(letterElement);
         // });
 
-        // Compliments array
+        // Compliments array Rumeysa
         const compliments = [
             "Her sabah seninle uyanmak en büyük mutluluğum",
             "Senin sevgin benim için en değerli hazine",
@@ -3913,15 +3913,15 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             const overlay = document.getElementById('surprise-overlay');
             const complimentDisplay = document.getElementById('compliment-display');
             
-            // Rastgele iltifat seç
+            // Rastgele iltifat seç Rumeysa
             const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
             
-            // Overlay'i göster ve iltifatı yaz
+            // Overlay'i göster ve iltifatı yaz Rumeysa
             overlay.classList.remove('hidden');
             overlay.classList.add('animate-fadeIn');
             complimentDisplay.textContent = randomCompliment;
             
-            // 3 saniye sonra gizle
+            // 3 saniye sonra gizle Rumeysa
             setTimeout(() => {
                 overlay.classList.add('hidden');
                 overlay.classList.remove('animate-fadeIn');
@@ -3951,10 +3951,10 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             }
         }
 
-        // Submit butonu event
+        // Submit butonu event Rumeysa
         document.getElementById('submit-check').addEventListener('click', checkName);
         
-        // Enter tuşu event
+        // Enter tuşu event Rumeysa
         document.getElementById('name-check').addEventListener('keypress', function(e) {
             if(e.key === 'Enter') {
                 e.preventDefault();
@@ -3962,11 +3962,11 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             }
         });
         
-        // Overlay'i başlangıçta gizle
+        // Overlay'i başlangıçta gizle - Rumeysa 
         document.getElementById('surprise-overlay').classList.add('hidden');
     </script>
 
-     <script>
+    <script>
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
@@ -3986,7 +3986,6 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         warning.style.justifyContent = 'center';
         warning.style.zIndex = '99999';
         warning.innerHTML = `
-            <h2 style="font-size:2em; color:#ff024e;">Lütfen Masaüstü Moduna Geçin</h2>
             <p style="font-size:1.2em; max-width:90vw; text-align:center;">
                 Bu siteyi kullanabilmek için tarayıcınızda masaüstü modunu açmanız gerekmektedir.<br><br>
                 Tarayıcı ayarlarından "Masaüstü sitesi iste" seçeneğini aktif edin.
