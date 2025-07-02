@@ -2297,48 +2297,164 @@
             </div>
 
             <!-- Page 14 - Love Quiz -->
-            <div id="love-quiz" class="page page-transition px-4 py-10 hidden">
-                <div class="max-w-2xl mx-auto">
-                    <h2 class="text-3xl font-bold text-pink-600 mb-8 text-center">Bu Bir Aşk Testi Bilirsen Çikolata</h2>
-                    
-                    <div class="bg-white rounded-xl shadow-md p-6">
-                        <div id="quiz-start">
-                            <p class="text-gray-700 mb-6">Beni Ne Kadar Tanıdığını Test Etmeye Hazır Mısın Aşkım?</p>
-                            <button id="start-quiz" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">
-                                Teste Başla! <i class="fas fa-play ml-2"></i>
-                            </button>
-                        </div>
-                        
-                        <div id="quiz-questions" class="hidden">
-                            <div class="mb-6">
-                                <p class="font-semibold text-pink-700 mb-4">En Sevdiğim Araba Markası Nedir?</p>
-                                <div class="space-y-3">
-                                    <button class="quiz-option w-full text-left p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors">
-                                        A) Audi
-                                    </button>
-                                    <button class="quiz-option w-full text-left p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors">
-                                        B) BMW
-                                    </button>
-                                    <button class="quiz-option w-full text-left p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors" data-correct="true">
-                                        C) Volkswagen (VW)
-                                    </button>
-                                </div>
+             <div id="love-quiz" class="page page-transition px-4 py-10 hidden">
+    <div class="bg-gradient-to-b from-pink-50 to-rose-100 min-h-screen flex flex-col items-center justify-center p-4"
+         style="margin-top: -60px;">
+        <div class="max-w-4xl w-full text-center space-y-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-rose-800 mb-8">For My Love</h1>
+            
+            <!-- Handwriting Animation -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <h2 class="text-xl md:text-2xl font-semibold text-rose-700 mb-4">Handwritten Love</h2>
+                <p class="text-gray-600 mb-4">Adımız Sanki Bir Elle Yazılmış Gibi...</p>
+                <div class="text-4xl md:text-5xl font-bold text-rose-600 handwriting">
+                    <span id="handwriting-name" class="handwriting-animation">Rumeysa 🤍 Alper</span>
+                </div>
+                <button onclick="restartHandwriting()" class="mt-6 px-4 py-2 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition">Replay Animation</button>
+            </div>
+            
+            <!-- Neon Animation -->
+            <div class="bg-gray-900 p-8 rounded-xl shadow-lg mb-8">
+                <h2 class="text-xl md:text-2xl font-semibold text-rose-300 mb-4">Neon Love</h2>
+                <p class="text-gray-300 mb-4">Baş Harflerimiz Güzelliğin Gibi Parlıyor</p>
+                <div class="text-4xl md:text-6xl font-bold neon-text neon-animation">
+                    <span>R &amp; A</span>
+                </div>
+                <p class="text-gray-400 mt-2">Forever in lights</p>
+            </div>
+            
+            <!-- Initials Animation -->
+            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
+                <h2 class="text-xl md:text-2xl font-semibold text-rose-700 mb-4">Our Initials</h2>
+                <p class="text-gray-600 mb-4">Baş Harflerimiz Bir Arada, Tek Vücut Halinde Atıyor...</p>
+                <div class="flex justify-center items-center space-x-8">
+                    <div class="text-6xl md:text-8xl font-bold text-rose-500 pacifico heartbeat" style="animation-delay: 0s;">R</div>
+                    <div class="text-6xl text-rose-400">❤️</div>
+                    <div class="text-6xl md:text-8xl font-bold text-rose-500 pacifico heartbeat" style="animation-delay: 0.5s;">A</div>
+                </div>
+            </div>
+            
+            <!-- Floating Letters Animation -->
+            <div class="bg-gradient-to-r from-rose-400 to-pink-500 p-8 rounded-xl shadow-lg">
+                <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">Falling in Love</h2>
+                <p class="text-white mb-6">İsminin Her Harfi Usulca Süzülürken...</p>
+                <div class="flex justify-center items-end h-32">
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0s;">R</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.2s;">U</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.4s;">M</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.6s;">E</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.8s;">Y</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.10s;">S</span>
+                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.12s;">A</span>
+
+                </div>
                             </div>
-                        </div>
-                        
-                        <div id="quiz-result" class="hidden text-center py-8">
-                            <div class="text-6xl mb-4">🎉</div>
-                            <h3 class="text-xl font-bold text-pink-600 mb-2">Tebrikler!</h3>
-                            <p class="text-gray-700">Beni çok iyi tanıyorsun ❤️</p>
-                            <button id="retry-quiz" class="mt-6 bg-pink-100 hover:bg-pink-200 text-pink-700 py-2 px-4 rounded-full text-sm transition-colors">
-                                Tekrar Dene
-                            </button>
                         </div>
                     </div>
                 </div>
-            </div>            
             </div>
-            </div>
+                </div>
+        
+                <script>
+                    // Restart handwriting animation
+                    function restartHandwriting() {
+                        const element = document.getElementById('handwriting-name');
+                        element.style.animation = 'none';
+                        void element.offsetWidth; // Trigger reflow
+                        element.style.animation = 'handwriting 3s steps(40) 1s 1 normal both';
+                    }
+                    
+                    // You can customize the names/initials here
+                    // For example, to change the name in handwriting animation:
+                    // document.getElementById('handwriting-name').textContent = 'New Name';
+                </script>
+        
+        <!-- Move the style block outside of the div, here is correct -->
+        <style>
+            .handwriting {
+                font-family: 'Dancing Script', cursive;
+            }
+            .pacifico {
+                font-family: 'Pacifico', cursive;
+            }
+            
+            /* Handwriting animation */
+            @keyframes handwriting {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+            
+            .handwriting-animation {
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: handwriting 3s steps(40) 1s 1 normal both;
+                border-right: 3px solid #f43f5e;
+            }
+            
+            /* Neon animation */
+            .neon-text {
+                color: #fff;
+                text-shadow: 
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #f43f5e,
+                    0 0 82px #f43f5e,
+                    0 0 92px #f43f5e,
+                    0 0 102px #f43f5e,
+                    0 0 151px #f43f5e;
+            }
+            
+            @keyframes neon-flicker {
+                0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                    text-shadow: 
+                        0 0 7px #fff,
+                        0 0 10px #fff,
+                        0 0 21px #fff,
+                        0 0 42px #f43f5e,
+                        0 0 82px #f43f5e,
+                        0 0 92px #f43f5e,
+                        0 0 102px #f43f5e,
+                        0 0 151px #f43f5e;
+                }
+                20%, 24%, 55% {
+                    text-shadow: none;
+                }
+            }
+            
+            .neon-animation {
+                animation: neon-flicker 1.5s infinite alternate;
+            }
+            
+            /* Heartbeat animation for initials */
+            @keyframes heartbeat {
+                0% { transform: scale(1); }
+                25% { transform: scale(1.1); }
+                50% { transform: scale(1); }
+                75% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+            
+            .heartbeat {
+                animation: heartbeat 1.5s infinite;
+            }
+            
+            /* Floating animation */
+            @keyframes floating {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            
+            .floating {
+                animation: floating 3s ease-in-out infinite;
+            }
+        </style>
             
 
             <!-- Page 7 - Our Promises -->
@@ -3882,32 +3998,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
         
 
         // Love Quiz Rumeysa
-        document.getElementById('start-quiz').addEventListener('click', function() {
-            document.getElementById('quiz-start').classList.add('hidden');
-            document.getElementById('quiz-questions').classList.remove('hidden');
-        });
-
-        document.querySelectorAll('.quiz-option').forEach(option => {
-            option.addEventListener('click', function() {
-                const resultDiv = document.getElementById('quiz-result');
-                document.getElementById('quiz-questions').classList.add('hidden');
-                
-                if (this.hasAttribute('data-correct')) {
-                    resultDiv.querySelector('h3').textContent = 'Tebrikler Manita Kazandın!';
-                    resultDiv.querySelector('p').textContent = 'Bunu Biliyorsan Zaten Evlenebiliriz 🤍';
-                } else {
-                    resultDiv.querySelector('h3').textContent = 'Yanlış Cevap Yazık Yazık';
-                    resultDiv.querySelector('p').textContent = 'İyi Düşün Hatun Yapma.';
-                }
-                
-                resultDiv.classList.remove('hidden');
-            });
-        });
-
-        document.getElementById('retry-quiz').addEventListener('click', function() {
-            document.getElementById('quiz-result').classList.add('hidden');
-            document.getElementById('quiz-start').classList.remove('hidden');
-        });
+        
 
         // Future Letters
         // const futureLetters = [
