@@ -653,9 +653,7 @@
                 <button data-number="13" class="number-btn w-10 h-10 rounded-full bg-pink-200 text-pink-700 font-bold flex items-center justify-center hover:bg-pink-300 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-pink-200/40 group">
                     <span class="group-hover:animate-pulse">13</span>
                 </button>
-                <button data-number="14" class="number-btn w-10 h-10 rounded-full bg-pink-200 text-pink-700 font-bold flex items-center justify-center hover:bg-pink-300 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-pink-200/40 group">
-                    <span class="group-hover:animate-pulse">14</span>
-                </button>
+               
             </div>
 
             <style>
@@ -2296,192 +2294,7 @@
                 </div>
             </div>
 
-            <!-- Page 14 - Love Quiz -->
-             <div id="love-quiz" class="page page-transition px-4 py-10 hidden">
-    <div class="bg-gradient-to-b from-pink-50 to-rose-100 min-h-screen flex flex-col items-center justify-center p-4"
-         style="margin-top: -60px;">
-        <div class="max-w-4xl w-full text-center space-y-12">
-            <h1 class="text-3xl md:text-4xl font-bold text-rose-800 mb-8">For My Love</h1>
-            
-            <!-- Handwriting Animation -->
-            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
-                <h2 class="text-xl md:text-2xl font-semibold text-rose-700 mb-4">Handwritten Love</h2>
-                <p class="text-gray-600 mb-4">Adımız Sanki Bir Elle Yazılmış Gibi...</p>
-                <div class="text-4xl md:text-5xl font-bold text-rose-600 handwriting">
-                    <span id="handwriting-name" class="handwriting-animation">Rumeysa 🤍 Alper</span>
-                </div>
-                <button onclick="restartHandwriting()" class="mt-6 px-4 py-2 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition">Replay Animation</button>
-            </div>
-            
-            <!-- Neon Animation -->
-            <div class="bg-gray-900 p-8 rounded-xl shadow-lg mb-8">
-                <h2 class="text-xl md:text-2xl font-semibold text-rose-300 mb-4">Neon Love</h2>
-                <p class="text-gray-300 mb-4">Baş Harflerimiz Güzelliğin Gibi Parlıyor</p>
-                <div class="text-4xl md:text-6xl font-bold neon-text neon-animation">
-                    <span>R &amp; A</span>
-                </div>
-                <p class="text-gray-400 mt-2">Forever in lights</p>
-            </div>
-            
-            <!-- Initials Animation -->
-            <div class="bg-white p-8 rounded-xl shadow-lg mb-8">
-                <h2 class="text-xl md:text-2xl font-semibold text-rose-700 mb-4">Our Initials</h2>
-                <p class="text-gray-600 mb-4">Baş Harflerimiz Bir Arada, Tek Vücut Halinde Atıyor...</p>
-                <div class="flex justify-center items-center space-x-8">
-                    <div class="text-6xl md:text-8xl font-bold text-rose-500 pacifico heartbeat" style="animation-delay: 0s;">R</div>
-                    <div class="text-6xl text-rose-400">❤️</div>
-                    <div class="text-6xl md:text-8xl font-bold text-rose-500 pacifico heartbeat" style="animation-delay: 0.5s;">A</div>
-                </div>
-            </div>
-            
-            <!-- Floating Letters Animation -->
-            <div class="bg-gradient-to-r from-rose-400 to-pink-500 p-8 rounded-xl shadow-lg">
-                <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">Falling in Love</h2>
-                <p class="text-white mb-6">İsminin Her Harfi Usulca Süzülürken...</p>
-                <div class="flex justify-center items-end h-32">
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0s;">R</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.2s;">U</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.4s;">M</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.6s;">E</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.8s;">Y</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.10s;">S</span>
-                    <span class="text-4xl md:text-5xl font-bold text-white floating" style="animation-delay: 0.12s;">A</span>
-
-                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                </div>
-        
-                <script>
-                    // Restart handwriting animation
-                    function restartHandwriting() {
-                        const element = document.getElementById('handwriting-name');
-                        element.style.animation = 'none';
-                        void element.offsetWidth; // Trigger reflow
-                        element.style.animation = 'handwriting 3s steps(40) 1s 1 normal both';
-                    }
-                    
-                    // You can customize the names/initials here
-                    // For example, to change the name in handwriting animation:
-                    // document.getElementById('handwriting-name').textContent = 'New Name';
-                </script>
-        
-        <!-- Move the style block outside of the div, here is correct -->
-        <style>
-            .handwriting {
-                font-family: 'Dancing Script', cursive;
-            }
-            .pacifico {
-                font-family: 'Pacifico', cursive;
-            }
-            
-            /* Handwriting animation */
-            @keyframes handwriting {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 100%;
-                }
-            }
-            
-            .handwriting-animation {
-                display: inline-block;
-                overflow: hidden;
-                white-space: nowrap;
-                animation: handwriting 3s steps(40) 1s 1 normal both;
-                border-right: 3px solid #f43f5e;
-            }
-            
-            /* Neon animation */
-            .neon-text {
-                color: #fff;
-                text-shadow: 
-                    0 0 7px #fff,
-                    0 0 10px #fff,
-                    0 0 21px #fff,
-                    0 0 42px #f43f5e,
-                    0 0 82px #f43f5e,
-                    0 0 92px #f43f5e,
-                    0 0 102px #f43f5e,
-                    0 0 151px #f43f5e;
-            }
-            
-            @keyframes neon-flicker {
-                0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-                    text-shadow: 
-                        0 0 7px #fff,
-                        0 0 10px #fff,
-                        0 0 21px #fff,
-                        0 0 42px #f43f5e,
-                        0 0 82px #f43f5e,
-                        0 0 92px #f43f5e,
-                        0 0 102px #f43f5e,
-                        0 0 151px #f43f5e;
-                }
-                20%, 24%, 55% {
-                    text-shadow: none;
-                }
-            }
-            
-            .neon-animation {
-                animation: neon-flicker 1.5s infinite alternate;
-            }
-            
-            /* Heartbeat animation for initials */
-            @keyframes heartbeat {
-                0% { transform: scale(1); }
-                25% { transform: scale(1.1); }
-                50% { transform: scale(1); }
-                75% { transform: scale(1.1); }
-                100% { transform: scale(1); }
-            }
-            
-            .heartbeat {
-                animation: heartbeat 1.5s infinite;
-            }
-            
-            /* Floating animation */
-            @keyframes floating {
-                0% { transform: translateY(0px); }
-                50% { transform: translateY(-15px); }
-                100% { transform: translateY(0px); }
-            }
-            
-            .floating {
-                animation: floating 3s ease-in-out infinite;
-            }
-        </style>
-            
-
-            <!-- Page 7 - Our Promises -->
-
-             <style>
-        @keyframes fade-in {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes scale-in {
-            0% { transform: scale(0.95); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        @keyframes slide-in-right {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(0); }
-        }
-        @keyframes spin-slow {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .animate-fade-in { animation: fade-in 0.6s ease-out; }
-        .animate-scale-in { animation: scale-in 0.4s ease-out; }
-        .animate-slide-in-right { animation: slide-in-right 0.5s ease-out; }
-        .animate-spin-slow { animation: spin-slow 3s linear infinite; }
-        .hidden { display: none; }
-    </style>
+                      <!-- Page 13 - Video -->
 
     
     <div id="promises" class="page page-transition px-4 py-10 hidden">
@@ -3895,7 +3708,6 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
             'love-notes', // Page 11
             'virtual-hug', // Page 12
             'our-dates', // Page 13
-            'love-quiz', // Page 14
         ];
 
         numberButtons.forEach(button => {
