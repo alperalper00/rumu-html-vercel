@@ -614,8 +614,8 @@
         <div class="pb-32"> <!-- Increased padding to accommodate number bar -->
             <!-- Number Navigation -->
             <div class="fixed bottom-4 left-0 right-0 flex justify-center gap-2 z-30 px-4 backdrop-blur-sm bg-white/30 py-2 rounded-full mx-auto max-w-max">
-                <button data-number="1" class="number-btn w-10 h-10 rounded-full bg-pink-600 text-white font-bold flex items-center justify-center hover:bg-pink-700 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-pink-300/50 group">
-                    <span class="group-hover:animate-bounce">1</span>
+                 <button data-number="1" class="number-btn w-10 h-10 rounded-full bg-pink-200 text-pink-700 font-bold flex items-center justify-center hover:bg-pink-300 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-pink-200/40 group">
+                    <span class="group-hover:animate-pulse">1</span>
                 </button>
                 <button data-number="2" class="number-btn w-10 h-10 rounded-full bg-pink-200 text-pink-700 font-bold flex items-center justify-center hover:bg-pink-300 transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-pink-200/40 group">
                     <span class="group-hover:animate-pulse">2</span>
@@ -3304,9 +3304,9 @@
     </style>
     
             <div id="our-future" class="page page-transition px-4 py-10 hidden">
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-indigo-100 flex items-center justify-center p-6">
+                <div class="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50 flex items-center justify-center p-6">
         <div class="text-center">
-            <h1 class="text-3xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-8 animate-fade-in font-serif tracking-wide drop-shadow-sm">
+            <h1 class="text-3xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent mb-8 animate-fade-in font-serif tracking-wide drop-shadow-sm">
                 Sevgilim İçin Özel
             </h1>
             <p class="text-xl text-gray-700 mb-16 animate-fade-in font-medium tracking-wide">
@@ -3318,7 +3318,7 @@
                 <div class="relative">
                     <!-- Ice Cube -->
                     <div id="iceCube" class="relative w-72 h-72 cursor-pointer select-none transition-all duration-300 scale-100 hover:scale-102">
-                        <div id="iceBlock" class="w-full h-full rounded-3xl bg-gradient-to-br from-blue-100 via-cyan-100 to-blue-200 shadow-2xl border-4 border-blue-200/50 backdrop-blur-sm transition-all duration-300 relative overflow-hidden">
+                        <div id="iceBlock" class="w-full h-full rounded-3xl bg-gradient-to-br from-pink-100 via-purple-100 to-pink-200 shadow-2xl border-4 border-pink-200/50 backdrop-blur-sm transition-all duration-300 relative overflow-hidden">
                             <!-- Ice sparkles -->
                             <div class="absolute inset-4 rounded-2xl bg-gradient-to-tr from-white/30 to-transparent"></div>
                             <div class="absolute top-12 left-12 w-8 h-8 bg-white/40 rounded-full blur-sm"></div>
@@ -3327,18 +3327,18 @@
                             <div class="absolute top-32 left-8 w-5 h-5 bg-white/35 rounded-full blur-sm"></div>
                             
                             <!-- Melting effect overlay -->
-                            <div id="meltOverlay" class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-cyan-300/60 to-transparent transition-all duration-300" style="height: 0%"></div>
+                            <div id="meltOverlay" class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-pink-300/60 to-transparent transition-all duration-300" style="height: 0%"></div>
                             
                             <!-- Water drops -->
                             <div id="waterDrops" class="hidden">
                                 <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
-                                    <div class="w-4 h-8 bg-cyan-400/70 rounded-full animate-bounce"></div>
+                                    <div class="w-4 h-8 bg-pink-400/70 rounded-full animate-bounce"></div>
                                 </div>
                                 <div class="absolute -bottom-6 left-1/3 transform -translate-x-1/2">
-                                    <div class="w-3 h-6 bg-cyan-300/60 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                                    <div class="w-3 h-6 bg-pink-300/60 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
                                 </div>
                                 <div class="absolute -bottom-4 right-1/3 transform translate-x-1/2">
-                                    <div class="w-3 h-7 bg-cyan-400/50 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                                    <div class="w-3 h-7 bg-pink-400/50 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
                                 </div>
                             </div>
                             
@@ -3352,8 +3352,8 @@
                         
                         <!-- Progress bar -->
                         <div id="progressContainer" class="absolute -bottom-12 left-0 w-full hidden">
-                            <div class="w-full bg-blue-200/30 rounded-full h-3">
-                                <div id="progressBar" class="bg-gradient-to-r from-cyan-400 to-blue-500 h-3 rounded-full transition-all duration-100" style="width: 0%"></div>
+                            <div class="w-full bg-pink-200/30 rounded-full h-3">
+                                <div id="progressBar" class="bg-gradient-to-r from-pink-400 to-pink-500 h-3 rounded-full transition-all duration-100" style="width: 0%"></div>
                             </div>
                             <p id="progressText" class="text-lg text-gray-600 mt-3 text-center font-medium">
                                Sevgin İle Buz Eriyor... 0%
@@ -3362,7 +3362,7 @@
                     </div>
                     
                     <!-- Melted water puddle -->
-                    <div id="puddle" class="w-80 h-12 bg-gradient-to-r from-cyan-200/60 via-blue-200/80 to-cyan-200/60 rounded-full blur-sm animate-pulse hidden"></div>
+                    <div id="puddle" class="w-80 h-12 bg-gradient-to-r from-pink-200/60 via-purple-200/80 to-pink-200/60 rounded-full blur-sm animate-pulse hidden"></div>
                 </div>
                 
                 <!-- Love message -->
@@ -3421,7 +3421,7 @@ Seni, kelimelerle tarif edilemeyecek kadar çok seviyorum. 💖
                     </div>
                     
                     <div class="flex justify-center mt-8">
-                        <button id="resetButton" class="px-10 py-4 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 text-white text-lg rounded-full hover:from-blue-600 hover:via-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-xl font-semibold tracking-wide">
+                        <button id="resetButton" class="px-10 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600 text-white text-lg rounded-full hover:from-pink-600 hover:via-purple-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl font-semibold tracking-wide">
                             🧊 Yeniden Dondur ❄️
                         </button>
                     </div>
